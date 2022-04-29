@@ -6,7 +6,6 @@
 ## Created
 - Mahmuda Karima (Daka Palembang)
 
-## Last Testing
-
-## Copyrights
-28 April 2022 
+## Testing
+- 28 April 2022
+- 29 April 2022 (Last)
