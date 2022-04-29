@@ -36,5 +36,5 @@ func main() {
 	server := echo.New()
 	
 	routes.RoutePath(server, userController, productController, purchaseController, saleController)
-	log.Fatal(server.Start(fmt.Sprintf("%d", conf.Port)))
+	log.Fatal(server.Start(fmt.Sprintf("%s:%d", "52.77.227.7", conf.Port)))
 }
