@@ -16,6 +16,11 @@ func RoutePath(e *echo.Echo, user uc.UserController, product pc.ProductControlle
 		Format: "time:${time_rfc3339}, method=${method}, uri=${uri}, status=${status}\n",
 	}))
 	
+	e.Use(middleware.CORSWithConfig(middleware.CORSConfig{
+	  AllowOrigins: []string{"https://labstack.com", "https://labstack.net"},
+	  AllowHeaders: []string{echo.HeaderOrigin, echo.HeaderContentType, echo.HeaderAccept},
+	}))
+	
 	e.POST("/register", user.Create)
 	e.POST("/login", user.Login)
 	
