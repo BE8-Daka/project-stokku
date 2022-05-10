@@ -17,7 +17,7 @@ func RoutePath(e *echo.Echo, user uc.UserController, product pc.ProductControlle
 	}))
 	
 	e.Use(middleware.CORSWithConfig(middleware.CORSConfig{
-	  AllowOrigins: []string{"https://labstack.com", "https://labstack.net"},
+	  AllowOrigins: []string{"https://labstack.com", "https://labstack.net", "http://54.179.1.246:8000"},
 	  AllowHeaders: []string{echo.HeaderOrigin, echo.HeaderContentType, echo.HeaderAccept},
 	}))
 	
